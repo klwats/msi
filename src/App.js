@@ -1,18 +1,26 @@
-import './App.css';
-import { useState, Switch } from 'react'
+
+import { useState } from 'react'
+import Home from './Components/Home/Home.js';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+
+
 
 function App() {
 
 
-  return (
-    <h1 className='title'>Hello</h1>
-  )
 
 
   return (
-    <Switch>
+    <Router>
+      <Routes>
+        <Route path='/' element={<Home />} />
 
-    </Switch>
+      </Routes>
+
+    </Router>
+
+
   )
 }
+
 export default App;
